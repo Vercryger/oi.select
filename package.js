@@ -19,8 +19,9 @@ Package.onUse(function(api) {
 
   api.use('angular:angular@1.2.0', where); // Dependencies
 
+  api.addAssets('src/template.html', where);
+
   api.addFiles([
-    'src/template.html',
     'src/select.css',
     'src/select.js'
   ], where); // Files in use
