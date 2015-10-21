@@ -1,67 +1,27 @@
-#oi.select — AngularJS directive of select element
+#vercryger:oi.select
 
-**[Download 0.2.16](https://github.com/tamtakoe/oi.select/tree/master/dist)**
+An AngularJS directive of multiselect elements for angular-meteor applications.
 
 ## Features
 
 * multiselect
 * API compatible with [Angular select](http://docs.angularjs.org/api/ng/directive/select)
+* Meteor 0.9+
 * Angular 1.2+ without jQuery and other dependencies
 * search options by substring (including the search query to the server)
 * use [Bootstrap](http://getbootstrap.com) styles (but you can use own styles)
-* 17 KB minified
-
-## Demo
-
-Do you want to see module in action? Visit [tamtakoe.github.io/oi.select](//tamtakoe.github.io/oi.select/) or try [playground](http://plnkr.co/edit/LnntLUdrAfz0DDlCGtGv?p=preview)
-
 
 ## Installation
 
-You can download files through Bower:
+In your Meteor app directory, enter:
 
 ```
-npm install -g bower
-bower install oi.select
+meteor add vercryger:oi.select
 ```
 
-or use npm:
-```
-npm install --save oi.select
-```
+## Usage
 
-or use local:
-
-```
-npm install
-npm install -g bower
-npm install -g gulp
-bower install
-```
-
-run local:
-
-```
-gulp
-open "http://localhost:3000"
-```
-
-make build and run tests:
-
-```
-gulp build
-gulp test
-```
-
-
-Then you need to include into index.html:
-
-```
-select.min.css
-select.min.js or select-tpls.min.js
-```
-
-When you are done downloading all the dependencies and project files the only remaining part is to add dependencies on the `oi.select` AngularJS module:
+Add dependencies on the `oi.select` AngularJS module:
 
 ```javascript
 angular.module('myModule', ['oi.select']);
@@ -69,7 +29,7 @@ angular.module('myModule', ['oi.select']);
 
 Use `oi-select` directive:
 
-```html
+```
 <oi-select
     oi-options="item.name for item in shopArr track by item.id"
     ng-model="bundle"
@@ -106,3 +66,13 @@ Use `oi-select` directive:
 ### oiSelect service
  * `options` — default options which we can override in `oiSelectProvider.options`
  * `version` — current version
+
+## Demo
+
+Do you want to see module in action? 
+
+```
+git clone https://github.com/Vercryger/oi.select.git
+cd meteor-angular-example 
+meteor
+```
