@@ -1,0 +1,26 @@
+<head>
+  <title>oi.select</title>
+</head>
+
+<body ng-app="devtags">
+  <div class="container" ng-controller="TagsCtrl as tc">
+    <h2>oi.select example with angular</h2>
+    <form>
+      <div class="form-group">
+        <label>Select tags</label>
+      
+        <oi-select
+          oi-options="tag for tag in tc.tags"
+          ng-model="tc.my_tags"
+          multiple
+          placeholder="Select..">
+        </oi-select>
+      </div>
+    </form>
+
+    <h3>Tags selected</h3>
+    <span ng-repeat="tag in tc.my_tags" class="label label-success">{{tag}}</span>&nbsp;
+      
+  </div>
+</body>
+

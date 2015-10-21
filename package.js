@@ -1,6 +1,6 @@
 var packageName = 'vercryger:oi.select';
 var where = 'client'; 
-var version = '0.2.18';
+var version = '0.2.19';
 var summary = 'AngularJS directive of select element';
 var gitLink = 'https://github.com/Vercryger/oi.select';
 var documentationFile = 'README.md';
